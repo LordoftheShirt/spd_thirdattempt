@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     // This comment was added through Git Desktop
+    // This comment was added through Unity
 
     [SerializeField] private Transform target;
     [SerializeField] private Vector3 offset = new Vector3(0, 0, -10f);
