@@ -82,6 +82,8 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // applys a velocity. Vector2 = 2D. Takes in horizontalvalue for x. Is told to keep its current value on y.
+        // There are four methods of movement: .AddForce, .MovePosition, .velocity, .Translate
+        // Time.deltaTime is the time between frames! More accurately: The time elapsed between the last frame and the one preceding it. Meaning, deltaTime: always 1 frame delay.
         rgbd.velocity = new Vector2(horizontalValue * moveSpeed * Time.deltaTime, rgbd.velocity.y);
     }
 
